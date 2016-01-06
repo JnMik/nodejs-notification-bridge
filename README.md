@@ -1,3 +1,6 @@
+This application was meant to relay some backend data (PHP, python, anything..)
+to a web interface instantly and refreshless via socket.
+POST on /notification route are forwarded on socket directly.
 
 #### Init project ####
     $ cp config.js.dist config.js
