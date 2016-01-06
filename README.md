@@ -16,4 +16,5 @@
       });
     </script>
 
-#### Try the notification bridge with Postman running some POST http call ####
+#### Try the notification bridge with Postman or cURL running some POST call on /notification route ####
+$ curl -H "Content-Type: application/json" -X POST -d '{"warning":"investigate X"}' http://localhost:8000/notification
