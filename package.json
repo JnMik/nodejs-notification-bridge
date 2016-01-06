@@ -1,0 +1,12 @@
+{
+  "name": "nodejs-notification-bridge",
+  "version": "0.0.1",
+  "description": "Relay any backend POST to web intervate listening to socket",
+  "author": "Jean-Michael Cyr",
+  "main": "server.js",
+  "dependencies": {
+    "socket.io": "~1.3.5",
+    "express": "^4.13.3",
+    "body-parser": "^1.14.2"
+  }
+}
