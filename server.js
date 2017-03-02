@@ -20,7 +20,9 @@ app.get('/status', function (req, res) {
 
 app.post('/notification', function (req, res) {
   console.log('Push notification to listeners');
-  globalSocket.volatile.emit('notification', req.body);
+  if(globalSocket) {
+    globalSocket.volatile.emit('notification', req.body);
+  }
   res.end('ok');
 });
 
