@@ -1,0 +1,13 @@
+version: '3'
+services:
+  install:
+    image: "node:8"
+    working_dir: "/app/nodejs-notification-bridge"
+    volumes:
+      - .:/app/nodejs-notification-bridge
+    command: npm install
+
+networks:
+  novalab_network:
+    external:
+      name: novalab_network
